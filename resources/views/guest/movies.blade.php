@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>MOVIES</h1>
     @foreach ($movies as $movie)
-        <div>{{$movie->title}}</div>
+        <div>Titolo: <b>{{$movie->title}}</b></div>
+        <div>Nazionalita: <b>{{$movie->nationality}}</b></div>
+        <div>Voto: <b>{{$movie->vote}}</b></div>
+        <hr>
     @endforeach
 </body>
 </html>
